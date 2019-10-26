@@ -35,21 +35,6 @@ const init = async () => {
     frame.end();
   }, 1000);
 
-  /*  const connection = rhea.connect(config.connection);
-    connection.open_sender(config.queue);
-
-    const ctx = await new Promise(res =>
-      rhea.once('sendable', res)
-    );
-
-    setInterval(() => {
-      ctx.sender.send({
-        body: JSON.stringify({
-          ping: Date.now()
-        })
-      });
-    }, 1000);*/
-
 };
 
 module.exports = init();
